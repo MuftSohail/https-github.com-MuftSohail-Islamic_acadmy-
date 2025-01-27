@@ -1,0 +1,359 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اسلامک اکیڈمی - دینی اورجدید علوم کی رہنمائی کا مرکز</title>
+    <meta name="description" content="اسلامک اکیڈمی دینی تعلیمات اور رہنمائی کے لیے ایک مرکز ہے۔">
+    <meta name="keywords" content="اسلامک اکیڈمی, دینی تعلیمات, قرآن, حدیث, فقہ, اسلامی تاریخ">
+    <meta name="author" content="اسلامک اکیڈمی">
+    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* بنیادی اسٹائلز */
+        body {
+            font-family: 'Roboto', sans-serif;
+            direction: rtl;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007b5e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        a {
+            color: #007b5e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #005f47;
+            text-decoration: underline;
+        }
+
+        /* نیویگیشن بار */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* سیکشنز */
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        /* فوٹر */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* کارڈز */
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* ہائی لائٹ */
+        .highlight {
+            background-color: #fffae5;
+            font-weight: bold;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* ریسپانسیو ڈیزائن */
+        @media only screen and (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+        }
+
+        /* اینیمیشنز */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        section {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* ڈارک موڈ */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #e0e0e0;
+            }
+
+            header, footer {
+                background-color: #1f1f1f;
+            }
+
+            nav {
+                background-color: #2c2c2c;
+            }
+
+            section {
+                background-color: #1f1f1f;
+                color: #e0e0e0;
+            }
+        }
+
+        /* ویڈیو کنٹینر */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* ٹیبل کنٹینر */
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: right;
+            border: 1px solid #ddd;
+        }
+
+        /* گیلری */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* میپ کنٹینر */
+        .map-container {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <p>بسم اللہ الرحمن الرحیم<p>
+    <h1>اسلامک اکیڈمی</h1>
+    <h2>علوم دینیہ اور علوم جدیدہ کا مرکز</h2>
+    <p>مفتی محمد سہیل خان شیرانی 
+    <p>فاضل وفاق المدارس العربیہ<p>
+    <p> وفاضل جامعہ دارالعلوم کراچی</p>
+</header>
+
+<nav>
+    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    <div class="nav-menu">
+        <a href="#home">ہوم</a>
+        <a href="#educational-content">تعلیمی مواد</a>
+        <a href="#scholars">علماء کی خدمات</a>
+        <a href="#fatwas">فتاویٰ</a>
+        <a href="#history">اسلامی تاریخ</a>
+        <a href="#introduction">میرا تعارف</a>
+        <a href="#contact">رابطہ</a>
+    </div>
+</nav>
+
+<section id="home">
+    <h2>ہوم پیج</h2>
+اسلامک اکیڈمی<p>
+مقصد:
+اسلامک اکیڈمی کا مقصد دینی تعلیمات کی اشاعت، اسلامی عقائد کی وضاحت، اور لوگوں کی دینی رہنمائی فراہم کرنا ہے۔ ہم قرآن و حدیث کی روشنی میں آپ کی زندگی کو بہتر بنانے کی کوشش کرتے ہیں، تاکہ آپ اپنے ایمان کو مضبوط کر سکیں اور اپنے مسائل کا حل اسلامی تعلیمات کے مطابق حاصل کر سکیں۔
+
+ہمارے بارے میں:
+ہماری ویب سائٹ پر آپ کو مختلف دینی موضوعات پر مواد ملے گا، جن میں قرآن و حدیث کے دروس، فقہ کے مختلف مسائل، تصوف، تفسیر، علم اصول فقہ اور دیگر اہم موضوعات پر تفصیلی لیکچرز اور مضامین شامل ہیں۔ ہماری کوشش ہے کہ آپ کو ایک محفوظ، معلوماتی، اور روحانی سفر کی طرف رہنمائی فراہم کی جائے۔
+
+اسلامی اصولوں اور عقائد کی وضاحت:
+ہم یہاں اسلامی عقائد اور اصولوں کی وضاحت کرتے ہیں، تاکہ آپ صحیح عقیدہ اختیار کر سکیں اور اپنی دینی زندگی کو بہتر بنا سکیں۔
+"مذہب اسلام میں مکمل رہنمائی ہے، ہم اسے سمجھ کر اپنی زندگی پر عمل کریں۔"
+
+ویب سائٹ کے دیگر حصے:
+
+تعلیمی مواد
+
+فتاویٰ
+
+ویڈیوز اور آڈیو
+
+مفکرین اور علماء کی خدمات
+
+کتابوں کا ڈیٹا بیس
+
+دعا اور عبادات
+
+رابطہ
+
+
+
+---
+
+اس مواد کو آپ کے ہوم پیج پر رکھ کر ویب سائٹ کی ایک تعلیمی اور دینی مرکز کی حیثیت کو مستحکم کیا جا سکتا ہے۔
+
+</p>
+    <img src="path/to/image.jpg" alt="اسلامک اکیڈمی" style="width:100%; max-width:600px;">
+</section>
+
+<section id="educational-content">
+    <h2>تعلیمی مواد</h2>
+    <div class="card">
+        <h3>درس قرآن </h3>
+        <h3>درس حدیث</h3>
+        <p>قرآن و حدیث کی تعلیمات پر مشتمل دروس۔</p>
+    </div>
+    <div class="card">
+        <h3>فقہ کے مختلف مسائل</h3>
+        <p>فقہ کے اہم مسائل پر تفصیلی مواد۔</p>
+    </div>
+</section>
+
+<section id="scholars">
+    <h2>مفکرین اور علماء کی خدمات</h2>
+    <p>مشہور علماء اور مفکرین کے اقوال اور تعلیمی کاموں کا ذکر کیا جائے گا۔</p>
+</section>
+
+<section id="fatwas">
+    <h2>فتاویٰ</h2>
+    <p>دینی مسائل پر فتاویٰ فراہم کیے جائیں گے جہاں صارفین اپنے سوالات بھیج سکتے ہیں۔</p>
+</section>
+
+<section id="history">
+    <h2>اسلامی تاریخ</h2>
+    <p>اہم اسلامی شخصیات کی زندگی اور ان کے اثرات پر مواد فراہم کیا جائے گا۔</p>
+</section>
+
+<section id="introduction">
+    <h2>تعارف</h2>
+    <p>مفتی محمد سہیل خان شیرانی ایک ممتاز، محقق، اور دیوبندی مکتبہ فکر کے انتہائی محترم عالم دین ہیں جنہوں نے علم دین کے ہر شعبے میں اپنے منفرد مقام کو ثابت کیا ہے۔ ان کی شخصیت علم و فہم کا ایک تاباں چراغ ہے، جو ہمیشہ تحقیق، تدریس اور اصلاح کی راہوں پر گامزن رہے ہیں۔ انہوں نے نہ صرف دینی تعلیمات کو اجاگر کیا بلکہ دینی فکروں میں تحقیق اور تنقید کی بنیاد رکھ کر لوگوں کی رہنمائی کی۔
+
+مفتی سہیل خان شیرانی کا تعلق بلوچستان کے شہر پشین سے ہے، جہاں انہوں نے ابتدائی تعلیم حاصل کی۔ آپ نے جامعہ دارالعلوم کراچی سے اعلیٰ تعلیم حاصل کی اور شیخ الاسلام مفتی محمد تقی عثمانی سے دورہ حدیث مکمل کیا۔ اس کے بعد آپ نے کئی اہم دینی کورسز میں بھی شرکت کی، جن میں ائمہ کورس اور اسلامی بنکاری جیسے موضوعات شامل ہیں۔ آپ نے تفسیر، حدیث، فقہ، اور اصول فقہ جیسے علوم میں گہری مہارت حاصل کی ہے۔
+
+ان کی علمی زندگی کا ایک نمایاں پہلو ان کی شیوہ تحقیق ہے۔ آپ نے کتابیں اور مقالے لکھے ہیں جن میں 'التحقیقات لدفع التلبیسات' اور 'بدعتی کے پیچھے نماز کا مسئلہ' جیسی اہم تحریریں شامل ہیں۔ ان کے تحریری کام نے اسلامی مسلک کے متعدد امور پر روشنی ڈالی ہے اور یہ علمی حلقوں میں خصوصی شہرت رکھتے ہیں۔
+
+آپ نے دیوبندی مکتبہ فکر کی نمائندگی کرتے ہوئے اہل حدیث اور بریلوی فرقے کے ساتھ متعدد علمی مناظرے کیے، جو آپ کی علمی بصیرت اور فکری مضبوطی کا منہ بولتا ثبوت ہیں۔ آپ کے دلائل ہمیشہ حقیقت پر مبنی اور دلائل سے لبریز ہوتے ہیں، جنہیں بڑے احترام سے سنا جاتا ہے۔
+
+مفتی سہیل خان شیرانی کا ذاتی اخلاق بھی علم و عمل کا نمونہ ہے۔ آپ نہ صرف ایک عظیم عالم دین ہیں بلکہ ایک معزز انسان بھی ہیں، جو اپنی عاجزی اور فہم سے دوسروں کی رہنمائی کرتے ہیں۔ ان کی شخصیت میں تواضع، سادگی، اور علم کا جذبہ نمایاں ہے، جو انہیں اپنے پیروکاروں کے درمیان انتہائی محترم بناتا ہے۔
+
+مفتی سہیل خان شیرانی کی علمی خدمات اور دینی محنتوں کی بدولت ان کا شمار معاصر علماء میں اہم ترین شخصیات میں کیا جاتا ہے، اور ان کی تحریریں، دروس اور علمی گفتگو ہمیشہ آنے والی نسلوں کے لیے ایک روشن راستہ فراہم کرتی ہیں۔
+
+</p>
+</section>
+
+<section id="contact">
+    <h2>رابطہ</h2>
+    <form action="/submit" method="post">
+        <label for="name">نام:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">ای میل:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">پیغام:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit" class="btn">بھیجیں</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 اسلامک اکیڈمی. تمام حقوق محفوظ ہیں.</p>
+    <div class="social-links">
+        <a href="https://facebook.com" target="_blank">فیس بک</a>
+        <a href="https://twitter.com" target="_blank">ٹویٹر</a>
+        <a href="https://instagram.com" target="_blank">انسٹاگرام</a>
+    </div>
+</footer>
+
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-menu').classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
